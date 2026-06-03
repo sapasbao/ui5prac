@@ -4,4 +4,5 @@
     <Button id="btn1" text="Click" press="showToast" />
     <Button id="btn2" text="Click Me" type="Emphasized" /> 
     <Button id="btn3" text="Click Me Not" type="Success" />
+    <Button id="btn4" text="Don't Click Me" type="Reject" />
 </mvc:View>
