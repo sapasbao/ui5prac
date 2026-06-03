@@ -3,5 +3,5 @@
     xmlns="sap.m">
     <Button id="btn1" text="Click" press="showToast" />
     <Button id="btn2" text="Click Me" type="Emphasized" /> 
-    <Button id="btn3" text="Click Me Too" type="Success" />
+    <Button id="btn3" text="Click Me Not" type="Success" />
 </mvc:View>
