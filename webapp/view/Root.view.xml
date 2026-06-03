@@ -1,0 +1,5 @@
+<mvc:View controllerName="c.g.ui5prac.controller.Root"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Button id="btn1" text="Click" press="showToast" />
+</mvc:View>
