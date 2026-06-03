@@ -2,4 +2,5 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Button id="btn1" text="Click" press="showToast" />
+    <Button id="btn2" text="Click Me" type="Accept" /> 
 </mvc:View>
