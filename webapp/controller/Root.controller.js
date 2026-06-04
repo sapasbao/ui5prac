@@ -22,6 +22,8 @@ sap.ui.define([
         //  initialize custom data model for the table.
         initializeCustomDataModel: function () {
            
+            // initialize JSON model and load data from JSON file using sapui5 require.toUrl to get the correct path.
+            // this is to make sure our urls dont break in flp and no-flp modes. 
             const oModel = new JSONModel();
             const oModelDataPath = sap.ui.require.toUrl("c/g/ui5prac/model/data.json");
 
