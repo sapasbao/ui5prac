@@ -8,8 +8,9 @@ Add C, R, U, D buttons.
 Add will contain 2 cases 
 If table is empty then also you have to add.
 If not empty 
-Then replicate the last row and add to 1st place and then user can edit its details and save it
- 
+Then replicate the last row and add to 1st place and then user can edit its details and save it. 
+use Dialog to tell the user if to add a new one or add a old one. 
+
 And save will contain 2 cases.. edit and add
  
 Abhijit Kumar
