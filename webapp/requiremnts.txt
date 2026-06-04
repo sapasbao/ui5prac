@@ -3,6 +3,7 @@
 DONE. 
 
 CRUD on table records. 
+Add C, R, U, D buttons. 
 
 Add will contain 2 cases 
 If table is empty then also you have to add.
