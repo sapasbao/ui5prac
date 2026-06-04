@@ -27,6 +27,8 @@ sap.ui.define([
             const oModel = new JSONModel();
             const oModelDataPath = sap.ui.require.toUrl("c/g/ui5prac/model/data.json");
 
+            // load the model path and then attach request completed and failed handlers 
+            // to log the status of the model loading.
             oModel.loadData(oModelDataPath);
 
             oModel.attachRequestCompleted(() => {
