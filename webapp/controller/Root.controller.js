@@ -4,8 +4,11 @@ sap.ui.define([
     "sap/ui/table/Table",
     "sap/ui/table/Column",
     "sap/ui/model/json/JSONModel",
-    "sap/m/Text"
-], (Controller, MessageToast, Table, Column, JSONModel, Text) => {
+    "sap/m/Text",
+    "sap/m/OverflowToolbar",
+    "sap/m/Title",
+    "sap/m/ToolbarSpacer"
+], (Controller, MessageToast, Table, Column, JSONModel, Text, OverflowToolbar, Title, ToolbarSpacer) => {
     "use strict";
 
     return Controller.extend("c.g.ui5prac.controller.Root", {
@@ -21,6 +24,7 @@ sap.ui.define([
            
             const oModel = new JSONModel();
             const oModelDataPath = sap.ui.require.toUrl("c/g/ui5prac/model/data.json");
+
             oModel.loadData(oModelDataPath);
 
             oModel.attachRequestCompleted(() => {
@@ -46,6 +50,7 @@ sap.ui.define([
                 visibleRowCount: 10,
                 alternateRowColors: true,
                 enableBusyIndicator: true,
+                toolbar: true
             })
 
             // Set the model to the table.
@@ -112,9 +117,24 @@ sap.ui.define([
                 })
             );
             
+            // bind the rows to the products path in the model.
             oTable.bindRows("/products");
-
+            // add the table to the view.
             this.byId("productCustomTable").addItem(oTable);
+
+            // create overflow toolbar with title and spacer.
+            const oToolbar = new OverflowToolbar({
+                content: [
+                    new Title({
+                        text: "Products"
+                    }),
+                    new ToolbarSpacer()
+                ]
+            });
+
+            // add the toolbar to the Table. 
+            oTable.addExtension(oToolbar);
+
         }
 
 
