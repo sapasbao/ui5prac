@@ -1,8 +1,7 @@
 <mvc:View controllerName="c.g.ui5prac.controller.Root"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Button id="btn1" text="Click" press="showToast" />
-    <Button id="btn2" text="Click Me" type="Emphasized" /> 
-    <Button id="btn3" text="Click Me Not" type="Negative" />
+
+    <VBox id="productCustomTable" />
     
 </mvc:View>

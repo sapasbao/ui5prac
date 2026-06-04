@@ -1,0 +1,2 @@
+1. Dynamtic Table - sap ui Table make in controller, not in view (use ui.table)
+2. use this https://ui5.sap.com/#/entity/sap.ui.table.Table/sample/sap.ui.table.sample.Basic
