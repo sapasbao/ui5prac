@@ -18,7 +18,7 @@
 
 ## ui5prac
 
-An SAP Fiori application.
+An SAP Fiori application for practice. 
 
 ### Starting the generated app
 
