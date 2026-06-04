@@ -41,7 +41,7 @@ sap.ui.define([
 
         // initialize custom table with data binding.
         initializeCustomTable: function () {
-
+            // fetch oModel with data from JSON file.
             const oModel = this.initializeCustomDataModel();
 
             // create product table with basic settings.
@@ -119,6 +119,7 @@ sap.ui.define([
             
             // bind the rows to the products path in the model.
             oTable.bindRows("/products");
+
             // add the table to the view.
             this.byId("productCustomTable").addItem(oTable);
 
